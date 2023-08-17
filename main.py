@@ -3,13 +3,12 @@ import os
 import telebot
 from dotenv import load_dotenv
 from telebot import types
-
 from information import *
-
 load_dotenv()
 
 token = os.getenv('TOKEN')
 bot = telebot.TeleBot(token)
+
 
 
 @bot.message_handler(commands=['start'])
